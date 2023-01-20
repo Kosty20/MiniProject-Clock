@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+
+    color: var(--my-orange);
+}
+
+:root{
+    --my-orange: rgb(255, 140, 0);
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+}
+
+.clock{
+    width: fit-content;
+    margin: auto;
+}
+
+span{
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(50px, 13vw, 500px);
+    text-shadow: 0 0 50px var(--my-orange);
+}
+
+span:last-of-type{
+    margin-left: 5vw;
+}
